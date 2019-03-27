@@ -1,0 +1,91 @@
+
+<DOCTYPE html>
+<html>
+<head>
+  <title>Clubhouse Epsports</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  <script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
+  <style type="text/css">
+    
+    body {
+      background-color: #3498db;
+      padding-top: 30px;
+    }
+
+    #welcome{
+      
+      color: purple;
+      padding-bottom: 50px;
+    }
+    #about{
+      color: white;
+    }
+
+    h1 {
+      font-size: 48px;
+    }
+    p{
+      font-size: 32px;
+    }
+    #link{
+      font-size: 42px;
+    }
+    #para{
+      padding-top: 50px;
+      font-family: 'Permanent Marker', cursive;
+    }
+    #bold{
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div id="welcome">
+    <h1>Welcome to the Clubhouse Esports website</h1>
+    <div class="row">
+      <div class="col">
+        <img src="panther.png" height="493px" width="400px">
+      </div>
+      <div class="col" id="para">
+
+        <p> Our Esports team includes Super Smash Bros Ultimate, League Of Legends, NBA 2k, and Magic the Gathering. We practice from 3:30PM to 6:30PM on weekdays.we also practice on weekends. </p>
+      </div>
+    </div>
+  </div>
+  <div id="bold">
+    <p> Bring your own controllers!
+    Watch our latest videos</p>
+  </div>
+    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/YQc9y0mRSAI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+
+    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/b7Kk-PXDKSU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+  <div class="card" style="width: 18rem;">
+      <img src="panther.png" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  
+  <h2>You are welcome to join</h2>
+  <p>Here is a 360 view of our Esports area</p>
+  <div id='vrview'></div>
+  <div id= "link">
+    <a href="https://www.facebook.com/YouthOnMorse/"><h3>Check out our facebook page</h3></a>
+  </div>
+</div>
+</body>
+<script type="text/javascript">
+  window.addEventListener('load', onVrViewLoad);
+
+function onVrViewLoad() {
+  // Selector '#vrview' finds element with id 'vrview'.
+  var vrView = new VRView.Player('#vrview', {
+    image: 'R0010044.JPG'
+  });
+}
+</script>
+</html>
